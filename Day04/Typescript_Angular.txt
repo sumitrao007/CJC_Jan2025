@@ -1,0 +1,73 @@
+Last Lectue
+1 operators
+	arithmathic,relational,logical,assignment => ==,===
+2 Control Statement
+	if,if-else, switch, break...
+3 Loop Statement
+	while,do-while for 
+	for(let i=0;i<4;i++){
+	
+	}
+4 var Vs const Vs let 
+	var scope => global scope 
+	let => within nereastest block 
+	const => global as well as local scope 
+	
+5 function
+	function add1(){
+	...
+	}
+	add1();
+	
+	function add1(a:number,b:number){
+	console.log(a+b);
+	}
+	add1(10,20);
+	
+	function add1():number{
+	return (8+8)
+	}
+	let res=add1();
+	
+	function add1(a:number,b:number):number{
+	 return (a+b);
+	}
+	let rest = add1(10,20);
+	
+6 Anonymous Function
+ let temp1=function (){
+	
+	}
+	
+	temp1()
+	
+	let temp1=function (a:number,b:number){
+		return (a+b)
+	}
+	
+	let res=temp1(10,20)
+7 fat arrow function
+	let temp1= ()=>{
+		....
+	}
+	
+	temp1()
+	
+	let temp1= (a:number,b:number):number=>{
+		return (a+b)
+	}
+	
+	let res= temp1(45,2);
+	
+
+Today Lecture
+1 Optional parameter Functions
+2 Default parameter Functions
+3 basics of array
+4 join method
+5 foreach method 
+6 Push & Pop
+7 splice method 
+8 map method 
+
+
