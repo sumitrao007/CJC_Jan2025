@@ -1,0 +1,37 @@
+Last Lectue
+1 Optional parameter Functions
+	function add1(a?:number,b?:number){
+		...
+	}
+2 Default parameter Functions
+function add1(a:number,b:number=20){
+		...
+	}
+3 basics of array
+	let a:number[]=[....];
+	let a:number[]=[];
+	let a=[2.5,8,"mm"]
+4 join method
+	a.join(" ")
+5 foreach method 
+	a.forEach((value,i,arr)=>{
+	....
+	})
+6 Push & Pop
+	a.push(45);
+	a.pop();
+7 splice method 
+	a.splice(1,0,78);
+	a.splice(2,1)
+8 map method 
+let sqrArr=a.map((value)=>{
+	return (value*value)
+})
+	
+
+Today Lecture
+1 json Object
+2 Array Of Object 
+3 Class => Additiobal Functionality of Typewscript 
+
+
