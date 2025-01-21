@@ -1,0 +1,86 @@
+Last Lectue
+1 json Object
+	let jsonObj={
+		id:9,
+		fname:"Sumit",
+		lname:...
+	}
+	console.log("
+		id ${json.id}
+		..
+	")
+2 Array Of Object 
+	arrproduct=[
+		{
+			id:9,
+			fname:"Sumit",
+			lname:...,
+			country:{
+				cid:9,
+				cname:"India"
+			},
+			month:["..."],
+			result:[
+				{
+					subj:...,
+					marks:...
+				},
+				{
+					subj:...,
+					marks:...
+				}
+			]
+		},
+		{
+			id:9,
+			fname:"Sumit",
+			lname:...
+		}
+		
+	]
+	
+	for(let i=0;i<arrproduct.length;i++){
+	console.log(
+		arrproduct[i].id
+		arrproduct[i].country.cname 
+		arrproduct[i[.month.join(" ")
+	);
+	
+	arrproduct[i].result.forEach((item)=>{
+		item.subj
+		item.marks
+	})
+	
+	}
+	
+3 Class => Additional Functionality of Typescript 
+
+	class Myclass{
+		id:number;
+		fname:string;
+		
+		constructor(id:,...){
+			this.id=id;
+			...
+		}
+		
+		
+		display(){
+			console.log(`
+				Id :: ${this.id}
+			`)
+		}
+	}
+	
+	let obj=new Myclass(9,"sumit");
+	obj.display();
+
+
+Today Lecture
+1 Class Continue
+2 Angular Application Flow 
+
+
+
+
+
