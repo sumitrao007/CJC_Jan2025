@@ -1,0 +1,64 @@
+Last Lectue
+1 Class Continue
+	export class Myclass{
+	
+	}
+	
+	export function add(a:number,b:number){
+	....
+	}
+	export const pi=3.14;
+	
+	
+	demo1.ts 
+	import {Myclass,add,pi} from "./demo";
+	...
+	
+	myfolder
+		demo1.ts 
+	import {Myclass} from "../day01/demo"
+	
+	...
+	
+2 Angular Application Flow 
+
+Today Lecture
+1 Bootstrap Integration
+	- It is SEO purpose
+	- To Make ur application Attractive
+	- To make ur application responsive 
+	- Customose desiging approach 
+	- It has its own template class 
+	- Its a 3rd party lib.
+	1 Online Intergration
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+		
+		- 24*7 Internate is required
+		
+	2 offline integration
+	
+	
+2 Component creation
+	1 Manual Creation
+	2 through cli 
+	ng g c componetname
+	
+3 Data Binding
+	- Data flow in one direction or two ay direction 
+	- To render a data dynamically 
+	1 One way data binding
+		- Data flow from component file to view File 
+		- It data flow from one direction 
+		- It has 4 implemntation
+		1 string Interpolation
+		2 Property binding
+		3 style binding
+		4 class binding
+	
+	2 Two data binding
+
+4 string Interpolation
+
+
+
+
