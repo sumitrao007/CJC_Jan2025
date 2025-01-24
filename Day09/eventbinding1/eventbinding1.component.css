@@ -1,0 +1,14 @@
+
+img{
+    width: 250px;
+    height: 250px;
+    cursor: pointer;
+}
+
+.imgblur{
+    opacity: 0.5;
+}
+
+.imgClear{
+    opacity: 1.0;
+}

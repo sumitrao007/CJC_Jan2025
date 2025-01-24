@@ -1,0 +1,16 @@
+<p>eventbinding1 works!</p>
+<!-- 
+    synatx 
+        (eventName)="EventHandler"
+        - U can apply any html tag 
+        - EventHandler => It is a simple custom method
+
+-->
+
+    <button (click)="onClick()" [class]="myclass" >Click</button><br><br>
+
+    <img title="Click on image" [style.border]="myborder"  
+        [class]="isImageClick?'imgblur':'imgClear'"
+    (click)="onImage()" src="../../assets/bg12.jpg" alt="">
+
+    

@@ -1,0 +1,57 @@
+Last Lectue
+1 Property Binding
+	<input [value]="name">
+	<img [src]="imgUrl">
+	
+	<div hidden=" {{isHidden}} ">
+	...
+	
+	<div [hidden]="isHidden">
+		..
+	.ts 
+	name:string="..."
+	imgUrl:string="..."
+	isHidden:boolean=false;
+2 Style Binding
+	<h2 [style.color]="mycolor">...
+	<h2 [style.color]="rating<4?'red':'green'" >
+
+<div [ngStyle]="jsonObj">
+	
+	.ts 
+	mycolor:string='...'
+	rating:number=21;
+	jsonObj={
+		color:'...',
+		fontFamily:"",
+		"fon-size":..
+	}
+3 Class Binding
+	<h2 [class]="myclass"> 
+	<h2 [class.danger]="ratin<4"
+		[class.warning]="rating>4"
+	>
+	
+	<div [ngClass]="jsonObj"
+	
+	.ts 
+	myclass:string="..."
+	ratin:number=2;
+	isError:boolean=true;
+	isSpecial:boolean=true;
+	jsonObj={
+		"success":!this.isError,
+		"danger":this.isError
+		"special":this.isSpecial
+	}
+
+Today Lecture
+1 Event Binding
+	- Data is flow from view to component
+2 Click Event
+	- It is inbuilt event given by angular 
+
+
+
+
+
