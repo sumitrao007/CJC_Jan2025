@@ -1,0 +1,15 @@
+Last Lectue
+1 Event Binding
+	- Data/request is flow from view to component
+2 Click Event
+	- It is inbuilt event given by angular 
+
+
+Today Lecture
+1 Template Ref Variable
+2 Real Time Example
+
+
+
+
+

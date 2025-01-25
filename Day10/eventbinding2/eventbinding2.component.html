@@ -1,0 +1,32 @@
+<p>eventbinding2 works!</p>
+<!-- 
+    Template Ref Variable
+    - if u want to access all information about html element then we go for template ref variable4
+    - we create on view file of particular html element 
+    - It holds the reference/Object/handle of particular html element.
+    - we can manipulate its behaviour or data according to our requirement
+    - U can set a data as well u can access the data 
+    - u can apply any html tag
+    - we have to create temp. ref. varibale on html element using # symbol 
+    syntax 
+    #uniquename
+-->
+
+<input #inputname type="text" class="form-control w-25" placeholder="Enter the Name"><br>
+<button (click)="onSend(inputname)" class="btn btn-success">Send</button>
+<br><br>
+
+<input #inputname1 type="text" class="form-control w-25" placeholder="Enter the Name"><br>
+<button (click)="onSend1(inputname1.value)" class="btn btn-success">Send</button>
+<hr>
+
+<div class="container">
+    <label for="">Number1::</label>
+    <input #num1 type="number" class="form-control w-25" placeholder="Enter the Number1"><br>
+    <label for="">Number2::</label>
+    <input #num2 type="number" class="form-control w-25" placeholder="Enter the Number2"><br><br>
+    <button (click)="onAddition(num1.value,num2.value)" class="btn btn-success" >Addition</button>
+    <br><br>
+    <label for="">Result::</label>
+    <input [value]="result" type="text" class="form-control w-25" placeholder="Result"><br>
+</div>
