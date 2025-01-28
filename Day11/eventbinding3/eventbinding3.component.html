@@ -1,0 +1,22 @@
+<p>eventbinding3 works!</p>
+
+<!-- 
+    Two Way Data Binding
+    - data is flow from view to Compo & vice versa
+    - In Two way data binding u will get upadated data into the property 
+    - for Two way data binding we have to import FormsModule in app.module.ts file in the import section 
+    - we have to use ngModel attribute directive 
+    - Two way data binding we have to use a noattion that notation is called banana in the box [()] .
+    - syntax
+        [(ngModel)]="propertyName"
+    - u can use any html tag 
+
+-->
+    <input type="text" [(ngModel)]="name" class="form-control w-25" placeholder="Enter the Name"> {{name}}
+    <hr>
+    <!-- Change Event 
+        (change)="EventHandler"
+    -->
+
+    <input #inputname (change)="onChange(inputname.value)" class="form-control w-25" type="text" placeholder="Enter the Name">
+

@@ -1,0 +1,21 @@
+Last Lectue
+1 Template Ref Variable
+2 Real Time Example
+
+Today Lecture
+1 Two Way Data Binding 
+	
+2 Change Event
+
+3 Structural Directives
+	- to modify/manipulate ur DOM Structure dynamically for that we use structural directive
+	1 *ngIf => if u want to check condition dynamically and mofify ur DOM Structure according that 
+	2 *ngFor => if u want iterate dynamically then we use 
+	3 *ngSwitch => To execute a specific case for that we use 
+4 *ngIf
+	- Component Directive => <ng-template>
+
+
+
+
+
