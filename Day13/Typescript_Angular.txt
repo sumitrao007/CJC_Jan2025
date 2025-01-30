@@ -1,0 +1,19 @@
+Last Lectue
+1 *ngFor 
+2 *ngSwitch
+
+
+Today Lecture
+1 Component Interaction
+	- u can send a data(string/number/boolean/json/array/array of object) to others component
+	- To establish parent-child relation 
+2 @Input()
+	- To send data from parent component to child component
+	- It is Property Level Decorator
+3 @Output()
+	- To send data from  child component to parent component
+
+
+
+
+

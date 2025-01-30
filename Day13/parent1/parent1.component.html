@@ -1,0 +1,12 @@
+<p>parent1 works!</p>
+
+<div class="container">
+    <input #inputdate type="date">
+    <button (click)="onClick(inputdate.value)" >Click</button>
+</div>
+
+<hr>
+<app-child1 [parentStrData]="strData" 
+    [parentJsonData]="jsonObj"
+    [parentDate]="mydate"
+></app-child1>
