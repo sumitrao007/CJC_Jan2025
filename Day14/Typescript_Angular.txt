@@ -1,0 +1,47 @@
+Last Lectue
+1 Component Interaction
+	- u can send a data(string/number/boolean/json/array/array of object) to others component
+	- To establish parent-child relation 
+2 @Input()
+	- To send data from parent component to child component
+	- It is Property Level Decorator
+3 @Output()
+	- To send data from  child component to parent component
+	
+	parent1 & child1
+	
+	app.component.html
+	<app-parent>
+	
+	parent.html
+	
+	<app-child1 [PrentStrData]="strDta"
+	[parentJsonData]="jsonObj"
+	>
+	
+	parent.ts 
+	strDta:string='dfsdfv';
+	jsonObj={
+	...
+	}
+	
+	
+	child.ts 
+	
+	@Input() PrentStrData:string='';
+	
+	@Input() parentJsonData:any={};
+	
+	child1.html
+	<h2> {{PrentStrData}}</h2>
+	
+
+
+
+Today Lecture
+1 Do the Task 
+2 Checking of Task & discuss about Task 
+
+
+
+
