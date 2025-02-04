@@ -1,0 +1,35 @@
+<p>parent3 works!</p>
+<h2> {{childStrRecived}} </h2>
+<h2>Id:: {{childJsonReceived.id}} </h2>
+<h2>First name:: {{childJsonReceived.fname}} </h2>
+<h2>Last name:: {{childJsonReceived.lname}} </h2>
+
+
+<div class="container">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Sr No</th>
+                <th>Product Name</th>
+                <th>Product Price</th>
+                <th>Product Qty</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of childArrObjReceived ;index as i">
+                <td> {{i+1}} </td>
+                <td> {{item.name}} </td>
+                <td> {{item.price}} </td>
+                <td> {{item.qty}} </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<hr>
+<app-child3 (childStrEvent)="childStrRecived=$event"
+    (childJsonEvent)="childJsonReceived=$event"
+    (childArrObjEvent)="childArrObjReceived=$event"
+
+
+></app-child3>

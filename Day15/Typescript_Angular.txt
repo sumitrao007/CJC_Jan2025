@@ -1,0 +1,14 @@
+Last Lectue
+1 Do the Task 
+2 Checking of Task & discuss about Task 
+
+
+Today Lecture
+1 @Output()
+	- if u want to send data from child component to parent component
+	- To create a custom event we have to use EventEmitter 
+	- EventEmitter is a simple class 
+	
+
+
+
