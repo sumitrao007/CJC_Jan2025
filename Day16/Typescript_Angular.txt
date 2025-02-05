@@ -1,0 +1,43 @@
+Last Lectue
+1 @Output()
+	- if u want to send data from child component to parent component
+	- To create a custom event we have to use EventEmitter 
+	- EventEmitter is a simple class 
+	parent3 & child3
+	app.component.html
+	<app-parent3>
+	
+	parent.ts
+	strDatareceived:string='';
+	
+	parent.html
+	
+	<h2>{{strDatareceived}}</h2>
+	<h2> Id :: {{jsonReceived.id}}</h2>
+...	
+	
+	<app-child3 (strEvent)="strDatareceived=$event" 
+	(jsonEvent)="jsonReceived=$event"
+	>
+	
+	child3.ts 
+	@Output() strEvent=new EventEmitter();
+	@Output() jsonEvent=new EventEmitter();
+	
+	onSend(){
+		this.strEvent.emit(this.strdata)
+		this.jsonEvent.emit(this.jsonData)
+	}
+	
+
+
+Today Lecture
+1 Pipe 
+	- to transform ur data without changing its original value 
+	
+2 Inbuilt Pipe 
+3 Custom Pipe 
+4 PipeTransform 
+5 transform(value:any,...args:any[]) => method
+
+
