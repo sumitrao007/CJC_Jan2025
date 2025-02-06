@@ -1,0 +1,124 @@
+Last Lectue
+1 Pipe 
+	- to transform ur data without changing its original value 
+	<h2> {{strData | lowercase}}</h2>
+	<h2> {{strData | uppercase}}</h2>
+	<h2> {{strData | titlecase}}</h2>
+	<h2> {{strData | slice:0:3}}</h2>
+	
+	<h2> {{0.25 | percent}}</h2>
+	<h2> {{0.025 | percent:'1.1'}}</h2>
+	
+	<h2> {{0.25 | currency}}</h2>
+	<h2> {{0.25 | currency:'INR'}}</h2>
+	<h2> {{0.25 | currency:'INR':'code'}}</h2>
+	
+	<h2> {{5.234568 | number:'1.2-3'}}</h2>
+	
+	<h2> {{mydate| date:'mediumDate'}}</h2>
+	<h2> {{mydate| date:'shortDate'}}</h2>
+	
+	<h2> {{mydate| date:'dd-MM-yyyy'}}</h2>
+	<h2> {{mydate| date:'dd/MM/yyyy'}}</h2>
+	<h2> {{mydate| date:'longDate'}}</h2>
+	<h2> {{mydate| date:'longDate'| uppercase}}</h2>
+	
+2 Inbuilt Pipe 
+3 Custom Pipe 
+4 PipeTransform 
+5 transform(value:any,start:number=0,end:number=20) => method
+{
+	let temp=(<string>value);
+	return (temp.substring(start,end)+"...")
+}
+
+
+.html
+
+<h2> {{strDetails | summery}}</h2>
+<h2> {{strDetails | summery:0:35}}</h2>
+
+
+Today Lecture
+1 HTTP Services
+	- Http => It is protocol 
+		protocol=> Set of rules 
+		- Where to use => on inernet 
+	- Services
+		- It is a simple class 
+		- It is use for code maintanibilty
+		- It is use for code resuabilty
+		- It is specifically design for to write ur Business Logic 
+		- It provides isolation to the component
+		
+	
+2 Http Method 
+	1 Get => to fetch a data from backend server 
+	2 post => to send a data from frontend server to backend server 
+	3 put => to update a particular data 
+	4 delete => to delete a particular data 
+	
+3 Http Request - Http Response 
+	Http Request
+		It has 2 parts 
+	Http Request=Http Header + Http Body 
+		1 Http Header
+			- Ip Address 
+			- Date & time 
+			- Server address 
+			- Http method 
+			- content Type 
+				- Image 
+				- Application/pdf 
+				- Doc
+				- Excel/csv
+				- html/text 
+			- Auth token 
+			- parameter details 
+		2 Http Body 
+			- It conatins only data 
+				- json 
+				- text/html
+				- xml (outdated now a days )
+	
+	
+	Http Response=Http Header + Http Body 
+		1 Http Header
+			- Ip Address 
+			- Date & time 
+			- Server address 
+			- Http method 
+			- content Type 
+				- Image 
+				- Application/pdf 
+				- Doc
+				- Excel/csv
+				- html/text 
+			- Auth token 
+			- parameter details 
+			
+			Http Status 
+			
+			1 2xx => 200-299 => Success Or OK => 200,201,202
+			2 3xx => 300-399 => Redirection 
+			3 4xx => 400-499 => Client Side Error 404
+			4 5xx => 500-599 => Server side error 
+			
+			
+		2 Http Body 
+			- It conatins only data 
+				- json 
+				- text/html
+				- xml (outdated now a days )
+				
+		
+	https://jsonplaceholder.typicode.com/posts
+	- It is a fake service 
+	- it is not store/update/delete ur record but it gives a response of ur request 
+	- it can not store ur data into database 
+	
+	https://jsonplaceholder.typicode.com/posts
+	
+
+
+
