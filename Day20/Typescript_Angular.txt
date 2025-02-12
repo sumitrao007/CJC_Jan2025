@@ -1,0 +1,19 @@
+Last Lectue
+1 post method
+2 put method
+
+Today Lecture
+1 delete
+2 Error handling 
+3 Routing 
+	- navigation from one component to another component
+	- u can send data from routing 
+	
+	Basic steps 
+	1 configure the route 
+	2 use <router-outlet> => Component directive 
+	3 to establish the link/navigate between a component
+
+
+
+
