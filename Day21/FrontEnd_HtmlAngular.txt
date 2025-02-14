@@ -1,0 +1,14 @@
+Last Lecture Agenda
+1 Project Continue 
+
+Today's Lecture Agenda
+1 Project Continue 
+2 routing 
+	- Navigation from one component to another component
+	- u can send paramter => data 
+	
+	Steps
+	1 configure the route 
+	2 use <router-outlet> => It is component directive 
+	3 establish the routerLink/navigate between component
+	
