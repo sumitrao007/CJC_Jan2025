@@ -1,0 +1,56 @@
+Last Lectue
+1 send parameter
+	- routerlink is implenetation of static routing 
+	{
+		path:"page2/:id",component:Page2Component
+	}
+	
+	home.ts 
+	id:number=9
+	
+	home.html
+	<a [routerLink]="['/page2',id]">
+	
+	page2.ts 
+	
+	constructor(private route:ActivatatedRoute){}
+	
+	ngOnit(){
+		this.getDataFromUrl()
+	}
+	getDataFromUrl(){
+		this.route.paramMap
+		.subscribe((param)=>{
+			console.log(param.get("id"))
+		})
+	}
+	
+	
+2 dynamic Routing 
+	- We have to use navigate method 
+	- it is used in ur component file only
+	- Dynamic routing is implementation 
+	
+	home.html
+	<button (click)="onPage1()">
+	....
+	
+	.ts 
+	constructor(private router:Router){}
+	onPage1(){
+		this.router.navigate(['/Page2',this.id]);
+	}
+
+Today Lecture
+1 Lazy Loading
+	- when the client required to load a particular module/component/service then that time we use lazy loading 
+	- to create ur custom module/feature module  
+	- create routing module file (optional)
+	- ng g m user --routing 
+2 Child Routes
+
+
+
+	
+
+
