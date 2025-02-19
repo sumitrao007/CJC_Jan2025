@@ -1,0 +1,29 @@
+Last Lectue
+1 Template Driven Form
+	- If u want to design a form thrn we go for TDF
+	- login,signup,f/b,etc 
+	- All basic level valiation is done on view file 
+	
+2 FormControl
+	- It is inbuilt class given by angular 
+	- With the help of this class we perform all basic level validation 
+	
+	Property 
+	1 valid => true/false
+	2 Invalid => true /false 
+	3 touched => true / False
+	4 pristine => true/false
+	5 dirty => true/ false
+	6 errors => Object=> true/false
+
+	steps 
+	1 To create instance of FormControl => To use ngModel to create a instance of FormControl & we have to use name attribute 
+	2 create template ref variable & assign it of ngModel 
+	3 use required attribute for to access html element using errors Object to validate a particular html element attribute
+	
+3 Json Pipe 
+	
+Today Lecture
+1 Email Validation
+
+
