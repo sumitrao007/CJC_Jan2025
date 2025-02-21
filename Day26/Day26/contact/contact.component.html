@@ -1,0 +1,44 @@
+<app-header></app-header>
+<div class="container d-flex justify-content-center align-items-center flex-wrap">
+    <div class="contact-card">
+        <div class="contact-logo">
+            <img src="../../assets/DrlQCE5zSNGfIvVofk1yhw.webp" alt="Your Logo">
+        </div>
+        <h3>Contact Details</h3>
+        <p><strong>Phone:</strong> +91-9960556397</p>
+        <p><strong>Email:</strong> raokhande.sumit@gmail.com</p>
+        <p><strong>LinkedIn:&nbsp;&nbsp;</strong> <a href="https://www.linkedin.com/feed/" target="_blank">linkedin.com/in/SumitRaokhande</a></p>
+        <p><strong>Youtube Channel:&nbsp;&nbsp;</strong> <a href="https://www.youtube.com/@SumitNiche" target="_blank">SumitNiche</a></p>
+    </div>
+    
+    <div class="signup-container">
+        <h2 class="text-center mb-4">Contact Us Now for Amazing Services</h2>
+        <form>
+            <div class="mb-3">
+                <label for="yourName" class="form-label">Your Name</label>
+                <input type="text" class="form-control" id="yourName" placeholder="Enter your  name" required>
+            </div>
+            
+            <div class="mb-3">
+                <label for="email" class="form-label">Email ID</label>
+                <input type="email" class="form-control" id="email" ngModel name="email" #email="ngModel"
+                    placeholder="Enter your email" [pattern]="EMAIL_PATTERN" required>
+                <div class="alert alert-danger" *ngIf="email.touched && !email.valid">
+                    **please enter the Email Id
+                    <div *ngIf="email.errors?.['pattern']">
+                        **please Enter the Valid Email ID
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+            </div>
+            
+            <button type="submit" class="btn btn-primary w-100">Submit</button>
+        </form>
+    </div>
+</div>
+
+<app-footer></app-footer>
+
