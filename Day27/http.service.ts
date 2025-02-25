@@ -29,4 +29,16 @@ export class HttpService {
     })
   }
 
+  updateEmpData(obj:Employees){
+    return (this.http.put(`${this.baseUrl}updateEmp/${obj.id}`,obj,{
+      responseType:"text"
+    }))
+  }
+
+  deleteEmp(id:any){
+   return (this.http.delete(`${this.baseUrl}deleteemp/${id}`,{
+      responseType:"text"
+    }));
+  }
+
 }

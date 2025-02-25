@@ -20,6 +20,9 @@ const routes: Routes = [
     path:"addEmp",component:AddempComponent
   },
   {
+    path:"updateEmp/:id",component:AddempComponent
+  },
+  {
     path:"**",component:NotfoundComponent
   }
 ];
